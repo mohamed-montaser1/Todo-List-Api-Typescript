@@ -1,0 +1,27 @@
+@api-url = http://localhost:3000/api/auth
+
+
+POST {{api-url}}/create-account HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "mohamed montaser",
+    "email": "mastrocoding@gmail.com",
+    "password": "12345678"
+}
+
+
+###
+
+POST {{api-url}}/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "mastrocoding@gmail.com",
+    "password": "12345678"
+}
+
+###
+
+GET {{api-url}}/current-user HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibW9oYW1lZCBtb250YXNlciIsImVtYWlsIjoibWFzdHJvY29kaW5nQGdtYWlsLmNvbSIsImlhdCI6MTY4NzIzMDcyMSwiZXhwIjoxNjk1ODcwNzIxfQ.N4ErxW8vIbI9DwkumOwQ60MLzWJ8Bs_iG_xyrPnT8n4

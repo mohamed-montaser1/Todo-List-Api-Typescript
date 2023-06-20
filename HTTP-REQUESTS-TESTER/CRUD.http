@@ -1,0 +1,40 @@
+@api-url = http://localhost:3000/api/crud
+
+GET {{api-url}}/all
+Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibW9oYW1lZCBtb250YXNlciIsImVtYWlsIjoibWFzdHJvY29kaW5nQGdtYWlsLmNvbSJ9.aWTtYhv0PI9i2K1jsghAKWObPTrKDeOxYS0egE1Miqo"
+
+###
+
+POST {{api-url}}/add HTTP/1.1
+Content-Type: application/json
+Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibW9oYW1lZCBtb250YXNlciIsImVtYWlsIjoibWFzdHJvY29kaW5nQGdtYWlsLmNvbSJ9.aWTtYhv0PI9i2K1jsghAKWObPTrKDeOxYS0egE1Miqo"
+
+{
+    "title": "hello woraald :)"
+}
+
+
+###
+
+PUT {{api-url}}/649108df5c056aee9580bacd HTTP/1.1
+Content-Type: application/json
+Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibW9oYW1lZCBtb250YXNlciIsImVtYWlsIjoibWFzdHJvY29kaW5nQGdtYWlsLmNvbSJ9.aWTtYhv0PI9i2K1jsghAKWObPTrKDeOxYS0egE1Miqo"
+
+{
+    "title": "updated!"
+}
+
+###
+
+PUT {{api-url}}/649108df5c056aee9580bacd HTTP/1.1
+Content-Type: application/json
+Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibW9oYW1lZCBtb250YXNlciIsImVtYWlsIjoibWFzdHJvY29kaW5nQGdtYWlsLmNvbSJ9.aWTtYhv0PI9i2K1jsghAKWObPTrKDeOxYS0egE1Miqo"
+
+{
+    "complated": true
+}
+
+###
+
+DELETE {{api-url}}/649108df5c056aee9580bacd HTTP/1.1
+Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibW9oYW1lZCBtb250YXNlciIsImVtYWlsIjoibWFzdHJvY29kaW5nQGdtYWlsLmNvbSJ9.aWTtYhv0PI9i2K1jsghAKWObPTrKDeOxYS0egE1Miqo"

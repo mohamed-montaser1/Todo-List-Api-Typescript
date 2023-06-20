@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "rootDir": "src",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "noUnusedLocals": true
+  },
+
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
